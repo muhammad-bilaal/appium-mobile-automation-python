@@ -1,0 +1,17 @@
+{
+  "platformName": "iOS",
+  "appium:platformVersion": "26.0.1",
+  "appium:deviceName": "iPhone 16.2w",
+  "appium:udid": "00008140-000202A63E02801C",
+  "appium:automationName": "XCUITest",
+  "appium:app": "/Volumes/data/projects/automation-test/tests/app/apps/gettr-1.75.0.ipa",
+  "appium:xcodeSigningId": "iPhone Developer",
+  "appium:updatedWDABundleId": "com.gettr.WebDriverAgentRunner",
+  "appium:useNewWDA": true,
+  "appium:showXcodeLog": true,
+  "appium:wdaStartupRetries": 3,
+  "appium:autoGrantPermissions": true,
+  "autoAcceptAlerts": true,
+  "fullReset": true,
+  "noReset": false
+}

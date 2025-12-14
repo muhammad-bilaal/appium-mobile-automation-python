@@ -1,0 +1,5 @@
+from os import getenv
+
+BS_USER_NAME = getenv("BROWSERSTACK_USERNAME")
+BS_ACCESS_KEY = getenv("BROWSERSTACK_ACCESS_KEY")
+WEB_LOGIN_URL = getenv("WEB_LOGIN_URL")

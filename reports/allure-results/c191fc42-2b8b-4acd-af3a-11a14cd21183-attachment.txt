@@ -1,0 +1,10 @@
+2025-11-20T16:10:44Z [GETTR-Logger][INFO] - ***** Setting up: test_validate_signup_with_random_email
+2025-11-20T16:10:44Z [GETTR-Logger][INFO] - Starting test 'test_validate_signup_with_random_email' on WEB via LOCAL
+2025-11-20T16:10:46Z [GETTR-Logger][INFO] - Running: test_validate_signup_with_random_email
+2025-11-20T16:10:46Z [GETTR-Logger][WARNING] - Could not find driver for page source logging in test: test_validate_signup_with_random_email
+2025-11-20T16:10:46Z [GETTR-Logger][INFO] - ***** Setting down: test_validate_signup_with_random_email
+2025-11-20T16:10:51Z [GETTR-Logger][INFO] - ***** Setting up: test_validate_signup_with_random_email
+2025-11-20T16:10:51Z [GETTR-Logger][INFO] - Starting test 'test_validate_signup_with_random_email' on WEB via LOCAL
+2025-11-20T16:10:52Z [GETTR-Logger][INFO] - Running: test_validate_signup_with_random_email
+2025-11-20T16:10:52Z [GETTR-Logger][WARNING] - Could not find driver for page source logging in test: test_validate_signup_with_random_email
+2025-11-20T16:10:52Z [GETTR-Logger][INFO] - ***** Setting down: test_validate_signup_with_random_email

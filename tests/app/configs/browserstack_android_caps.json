@@ -1,0 +1,25 @@
+{
+  "platformName": "Android",
+  "appium:platformVersion": "12.0",
+  "appium:deviceName": "Google Pixel 6",
+  "appium:automationName": "UiAutomator2",
+  "appium:app": "bs://7dbd27bf267baaa6588db9009151b9c424410b54",
+  "appium:autoGrantPermissions": true,
+  "appium:autoAcceptAlerts": true,
+  "appium:disableHiddenApiPolicyPrePApp": true,
+  "appium:ignoreHiddenApiPolicyError": true,
+  "appium:newCommandTimeout": 300,
+  "appium:connectHardwareKeyboard": true,
+  "bstack:options": {
+    "buildName": "Android Tests",
+    "sessionName": "Android Test Session",
+    "debug": true,
+    "networkLogs": true,
+    "video": true,
+    "appiumLogs": true,
+    "deviceLogs": true,
+    "local": false
+  },
+  "fullReset": true,
+  "noReset": false
+}

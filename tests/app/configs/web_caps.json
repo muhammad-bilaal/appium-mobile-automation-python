@@ -1,0 +1,9 @@
+{
+  "browserName": "chrome",
+  "goog:chromeOptions": {
+    "args": [
+      "--disable-gpu",
+      "--window-size=1440,900"
+    ]
+  }
+}

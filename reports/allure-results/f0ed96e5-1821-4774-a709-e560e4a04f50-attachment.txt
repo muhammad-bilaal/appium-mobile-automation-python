@@ -1,0 +1,26 @@
+2025-11-20T16:00:24Z [GETTR-Logger][INFO] - ***** Setting up: test_validate_signup_with_random_email
+2025-11-20T16:00:24Z [GETTR-Logger][INFO] - Starting web session driver for environment: local
+2025-11-20T16:00:45Z [GETTR-Logger][INFO] - [Attempt 1] Waiting for visibility of element: //button[.//p[text()='Log In']]
+2025-11-20T16:00:45Z [GETTR-Logger][INFO] - Element visible: Locators(locator="//button[.//p[text()='Log In']]", by='xpath', time_out=30)
+2025-11-20T16:00:45Z [GETTR-Logger][INFO] - [Attempt 1] Waiting for visibility of element: //button[.//p[text()='Log In']]
+2025-11-20T16:00:45Z [GETTR-Logger][INFO] - Element visible: Locators(locator="//button[.//p[text()='Log In']]", by='xpath', time_out=30)
+2025-11-20T16:00:45Z [GETTR-Logger][INFO] - [Attempt 1] Waiting for visibility of element: //span[text()='Log in with password']
+2025-11-20T16:00:47Z [GETTR-Logger][INFO] - Element visible: Locators(locator="//span[text()='Log in with password']", by='xpath', time_out=30)
+2025-11-20T16:00:47Z [GETTR-Logger][INFO] - [Attempt 1] Waiting for visibility of element: email
+2025-11-20T16:00:47Z [GETTR-Logger][INFO] - Element visible: Locators(locator='email', by='id', time_out=30)
+2025-11-20T16:00:47Z [GETTR-Logger][INFO] - Entering valid credentials for switch account validation
+2025-11-20T16:00:47Z [GETTR-Logger][INFO] - Setting text for element:email text='sg3home1@yopmail.com'
+2025-11-20T16:00:47Z [GETTR-Logger][INFO] - Getting elements: email using id
+2025-11-20T16:00:47Z [GETTR-Logger][INFO] - Getting elements: password using id
+2025-11-20T16:00:47Z [GETTR-Logger][INFO] - Setting text for element:password text='Gettr135!'
+2025-11-20T16:00:47Z [GETTR-Logger][INFO] - Getting elements: password using id
+2025-11-20T16:00:47Z [GETTR-Logger][INFO] - Getting elements: //button[.//span[normalize-space(text())='Log In']] using xpath
+2025-11-20T16:00:47Z [GETTR-Logger][INFO] - Clicking Element://button[.//span[normalize-space(text())='Log In']] using xpath
+2025-11-20T16:00:47Z [GETTR-Logger][INFO] - Getting elements: //button[.//span[normalize-space(text())='Log In']] using xpath
+2025-11-20T16:00:49Z [GETTR-Logger][INFO] - Running: test_validate_signup_with_random_email
+2025-11-20T16:00:49Z [GETTR-Logger][WARNING] - Could not find driver for page source logging in test: test_validate_signup_with_random_email
+2025-11-20T16:00:49Z [GETTR-Logger][INFO] - ***** Setting down: test_validate_signup_with_random_email
+2025-11-20T16:00:54Z [GETTR-Logger][INFO] - ***** Setting up: test_validate_signup_with_random_email
+2025-11-20T16:00:54Z [GETTR-Logger][INFO] - Running: test_validate_signup_with_random_email
+2025-11-20T16:00:54Z [GETTR-Logger][WARNING] - Could not find driver for page source logging in test: test_validate_signup_with_random_email
+2025-11-20T16:00:54Z [GETTR-Logger][INFO] - ***** Setting down: test_validate_signup_with_random_email

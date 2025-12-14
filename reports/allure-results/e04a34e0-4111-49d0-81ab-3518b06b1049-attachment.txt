@@ -1,0 +1,9 @@
+2025-11-20T15:57:09Z [GETTR-Logger][INFO] - ***** Setting up: test_validate_signup_with_random_email
+2025-11-20T15:57:09Z [GETTR-Logger][INFO] - Starting test 'test_validate_signup_with_random_email' on WEB via LOCAL
+2025-11-20T15:57:09Z [GETTR-Logger][INFO] - ***** Setting down: test_validate_signup_with_random_email
+2025-11-20T15:57:14Z [GETTR-Logger][INFO] - ***** Setting up: test_validate_signup_with_random_email
+2025-11-20T15:57:14Z [GETTR-Logger][INFO] - Starting test 'test_validate_signup_with_random_email' on WEB via LOCAL
+2025-11-20T15:57:14Z [GETTR-Logger][INFO] - ***** Setting down: test_validate_signup_with_random_email
+2025-11-20T15:57:19Z [GETTR-Logger][INFO] - ***** Setting up: test_validate_signup_with_random_email
+2025-11-20T15:57:19Z [GETTR-Logger][INFO] - Starting test 'test_validate_signup_with_random_email' on WEB via LOCAL
+2025-11-20T15:57:19Z [GETTR-Logger][INFO] - ***** Setting down: test_validate_signup_with_random_email

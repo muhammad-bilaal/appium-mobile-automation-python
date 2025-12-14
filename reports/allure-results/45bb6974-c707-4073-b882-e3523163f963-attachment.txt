@@ -1,0 +1,10 @@
+[32mINFO    [0m GETTR-Logger:conftest.py:76 ***** Setting up: test_validate_signup_with_random_email
+[32mINFO    [0m GETTR-Logger:app_driver.py:40 Starting test 'test_validate_signup_with_random_email' on WEB via LOCAL
+[32mINFO    [0m GETTR-Logger:conftest.py:298 Running: test_validate_signup_with_random_email
+[33mWARNING [0m GETTR-Logger:test_helpers.py:55 Could not find driver for page source logging in test: test_validate_signup_with_random_email
+[32mINFO    [0m GETTR-Logger:conftest.py:304 ***** Setting down: test_validate_signup_with_random_email
+[32mINFO    [0m GETTR-Logger:conftest.py:76 ***** Setting up: test_validate_signup_with_random_email
+[32mINFO    [0m GETTR-Logger:app_driver.py:40 Starting test 'test_validate_signup_with_random_email' on WEB via LOCAL
+[32mINFO    [0m GETTR-Logger:conftest.py:298 Running: test_validate_signup_with_random_email
+[33mWARNING [0m GETTR-Logger:test_helpers.py:55 Could not find driver for page source logging in test: test_validate_signup_with_random_email
+[32mINFO    [0m GETTR-Logger:conftest.py:304 ***** Setting down: test_validate_signup_with_random_email

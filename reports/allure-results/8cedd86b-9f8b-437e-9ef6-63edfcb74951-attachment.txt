@@ -1,0 +1,53 @@
+2025-11-20T16:50:48Z [GETTR-Logger][INFO] - ***** Setting up: test_validate_signup_with_random_email
+2025-11-20T16:50:48Z [GETTR-Logger][INFO] - Starting test 'test_validate_signup_with_random_email' on WEB via LOCAL
+2025-11-20T16:50:50Z [GETTR-Logger][INFO] - Running: test_validate_signup_with_random_email
+2025-11-20T16:51:25Z [GETTR-Logger][INFO] - [Attempt 1] Waiting for visibility of element: //button[.//p[text()='Log In']]
+2025-11-20T16:51:25Z [GETTR-Logger][INFO] - Element visible: Locators(locator="//button[.//p[text()='Log In']]", by='xpath', time_out=30)
+2025-11-20T16:51:25Z [GETTR-Logger][INFO] - [Attempt 1] Waiting for visibility of element: //button[contains(@class, 'jss')]//p[normalize-space(text())='Sign up']
+2025-11-20T16:51:25Z [GETTR-Logger][INFO] - Element visible: Locators(locator="//button[contains(@class, 'jss')]//p[normalize-space(text())='Sign up']", by='xpath', time_out=30)
+2025-11-20T16:51:27Z [GETTR-Logger][INFO] - Getting elements: //button[contains(@class, 'jss')]//p[normalize-space(text())='Sign up'] using xpath
+2025-11-20T16:51:32Z [GETTR-Logger][INFO] - Selected domain: comfythings.com
+2025-11-20T16:51:32Z [GETTR-Logger][INFO] - Generated email: testqa631518_cn7hx@comfythings.com
+2025-11-20T16:51:33Z [GETTR-Logger][INFO] - Created inbox with ID: 691f471541985d1d2a05bdf0
+2025-11-20T16:51:33Z [GETTR-Logger][INFO] - Clearing Text for element:[name="email"] text='testqa631518_cn7hx@comfythings.com'
+2025-11-20T16:51:33Z [GETTR-Logger][INFO] - Getting elements: [name="email"] using css selector
+2025-11-20T16:51:36Z [GETTR-Logger][INFO] - Getting elements: [class="MuiIconButton-label"] using css selector
+2025-11-20T16:51:38Z [GETTR-Logger][INFO] - Getting elements: [type="submit"] [class="MuiButton-label"] using css selector
+2025-11-20T16:51:38Z [GETTR-Logger][INFO] - [Attempt 1] Waiting for visibility of element: //*[contains(normalize-space(text()), 'Verification code sent. Please check your email.')]
+2025-11-20T16:51:59Z [GETTR-Logger][INFO] - Element visible: Locators(locator="//*[contains(normalize-space(text()), 'Verification code sent. Please check your email.')]", by='xpath', time_out=30)
+2025-11-20T16:51:59Z [GETTR-Logger][INFO] - [Attempt 1] Waiting for visibility of element: //*[contains(normalize-space(text()), 'Verification code sent. Please check your email.')]
+2025-11-20T16:51:59Z [GETTR-Logger][INFO] - Element visible: Locators(locator="//*[contains(normalize-space(text()), 'Verification code sent. Please check your email.')]", by='xpath', time_out=30)
+2025-11-20T16:51:59Z [GETTR-Logger][INFO] - Getting elements: //*[contains(normalize-space(text()), 'Verification code sent. Please check your email.')] using xpath
+2025-11-20T16:51:59Z [GETTR-Logger][INFO] - Getting elements: //*[contains(normalize-space(text()), 'Verification code')] using xpath
+2025-11-20T16:52:01Z [GETTR-Logger][INFO] - Authenticated for inbox: testqa631518_cn7hx@comfythings.com
+2025-11-20T16:52:07Z [GETTR-Logger][INFO] - 📥 Found 1 emails in inbox
+2025-11-20T16:52:07Z [GETTR-Logger][INFO] - Processing email ID: 691f4731b75af9737174da23, From: noreply@re-mail.gettr.com, Subject: Your GETTR Verification Code
+2025-11-20T16:52:07Z [GETTR-Logger][INFO] - 🔍 Processing email ID: 691f4731b75af9737174da23
+2025-11-20T16:52:08Z [GETTR-Logger][INFO] - ✅ Valid OTP found: 306987
+2025-11-20T16:52:08Z [GETTR-Logger][INFO] - Got OTP: 306987
+2025-11-20T16:52:08Z [GETTR-Logger][INFO] - Setting text for element:[class="styles_react-code-input__CRulA"] text='306987'
+2025-11-20T16:52:08Z [GETTR-Logger][INFO] - Getting elements: [class="styles_react-code-input__CRulA"] using css selector
+2025-11-20T16:52:08Z [GETTR-Logger][INFO] - Error while fetching OTP (Message: element not interactable
+  (Session info: chrome=142.0.7444.176); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+0   chromedriver                        0x0000000107726698 chromedriver + 6153880
+1   chromedriver                        0x000000010771db6a chromedriver + 6118250
+2   chromedriver                        0x00000001071b2878 chromedriver + 436344
+3   chromedriver                        0x00000001071ff82b chromedriver + 751659
+4   chromedriver                        0x00000001071fdb7a chromedriver + 744314
+5   chromedriver                        0x00000001071f93e8 chromedriver + 725992
+6   chromedriver                        0x0000000107253c8e chromedriver + 1096846
+7   chromedriver                        0x00000001071f7b6f chromedriver + 719727
+8   chromedriver                        0x00000001071f8871 chromedriver + 723057
+9   chromedriver                        0x00000001076e3011 chromedriver + 5877777
+10  chromedriver                        0x00000001076e74c2 chromedriver + 5895362
+11  chromedriver                        0x00000001076bf155 chromedriver + 5730645
+12  chromedriver                        0x00000001076e7f6f chromedriver + 5898095
+13  chromedriver                        0x00000001076aedc4 chromedriver + 5664196
+14  chromedriver                        0x000000010770ab48 chromedriver + 6040392
+15  chromedriver                        0x000000010770ad0d chromedriver + 6040845
+16  chromedriver                        0x000000010771d751 chromedriver + 6117201
+17  libsystem_pthread.dylib             0x00007ff81519ce05 _pthread_start + 115
+18  libsystem_pthread.dylib             0x00007ff815198857 thread_start + 15
+) — passing test gracefully
+2025-11-20T16:52:08Z [GETTR-Logger][INFO] - ***** Setting down: test_validate_signup_with_random_email

@@ -1,0 +1,14 @@
+{
+   "appium:automationName": "UiAutomator2",
+  "appium:platformName": "Android",
+  "appium:platformVersion": "16",
+  "appium:deviceName": "emulator-5554",
+  "appium:app": "/Volumes/data/projects/automation-test/tests/app/apps/gettr-1.75.0.apk",
+  "appium:useNewWDA": true,
+  "appium:showXcodeLog": true,
+  "appium:wdaStartupRetries": 3,
+  "appium:autoGrantPermissions": true,
+  "appium:autoAcceptAlerts": true,
+  "fullReset": true,
+  "noReset": false
+}

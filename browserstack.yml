@@ -1,0 +1,31 @@
+userName: ${BROWSERSTACK_USERNAME}
+accessKey: ${BROWSERSTACK_ACCESS_KEY}
+
+framework: pytest
+
+# Build level metadata improves observability dashboards
+capabilities:
+  projectName: Mobile App Automation
+  buildName: ${BROWSERSTACK_BUILD_NAME:-Mobile App Tests}
+  buildIdentifier: '#${BUILD_NUMBER}'
+  sessionName: ${BROWSERSTACK_SESSION_NAME:-Pytest Appium Session}
+  testObservability: true
+  networkLogs: true
+  deviceLogs: true
+  appiumLogs: true
+  debug: true
+  video: true
+
+# Platform combinations that tests are executed on.
+platforms:
+  - platformName: android
+    deviceName: Google Pixel 6
+    osVersion: 12.0
+    app: ${BROWSERSTACK_ANDROID_APP_ID:-bs://253b77d1ba46fe55627dbfb4721c5cbf0fc4a090}
+  - platformName: ios
+    deviceName: iPhone 14
+    osVersion: 16
+    app: ${BROWSERSTACK_IOS_APP_ID:-<replace-with-ios-apps-url>}
+
+# Automatically start BrowserStack Local tunnel when needed.
+browserstackLocal: ${BROWSERSTACK_LOCAL:-false}

@@ -1,0 +1,20 @@
+{
+  "platformName": "iOS",
+  "appium:deviceName": "iPhone 15",
+  "appium:automationName": "XCUITest",
+  "app": "bs://b9da227af713c08f9309c0507f06cead4c8570ac",
+  "appium:xcodeSigningId": "iPhone Developer",
+  "appium:updatedWDABundleId": "com.gettr.WebDriverAgentRunner",
+  "appium:useNewWDA": true,
+  "appium:showXcodeLog": true,
+  "appium:wdaStartupRetries": 3,
+  "appium:autoGrantPermissions": true,
+  "autoAcceptAlerts": true,
+  "noReset": false,
+  "fullReset": false,
+  "bstack:options": {
+    "sessionName": "iOS Test Session",
+    "debug": true,
+    "networkLogs": true
+  }
+}
