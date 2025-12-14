@@ -1,9 +1,0 @@
-[32mINFO    [0m GETTR-Logger:conftest.py:76 ***** Setting up: test_validate_signup_with_random_email
-[32mINFO    [0m GETTR-Logger:app_driver.py:21 Starting test 'test_validate_signup_with_random_email' on WEB via LOCAL
-[32mINFO    [0m GETTR-Logger:conftest.py:285 ***** Setting down: test_validate_signup_with_random_email
-[32mINFO    [0m GETTR-Logger:conftest.py:76 ***** Setting up: test_validate_signup_with_random_email
-[32mINFO    [0m GETTR-Logger:app_driver.py:21 Starting test 'test_validate_signup_with_random_email' on WEB via LOCAL
-[32mINFO    [0m GETTR-Logger:conftest.py:285 ***** Setting down: test_validate_signup_with_random_email
-[32mINFO    [0m GETTR-Logger:conftest.py:76 ***** Setting up: test_validate_signup_with_random_email
-[32mINFO    [0m GETTR-Logger:app_driver.py:21 Starting test 'test_validate_signup_with_random_email' on WEB via LOCAL
-[32mINFO    [0m GETTR-Logger:conftest.py:285 ***** Setting down: test_validate_signup_with_random_email

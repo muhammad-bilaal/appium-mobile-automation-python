@@ -1,136 +1,171 @@
-# Automation Test
+# Mobile Automation Framework (Appium + Python)
 
-## Document Structure
+## 📌 Overview
+
+This repository demonstrates a **production-grade mobile automation framework** built with **Python, Pytest, and Appium**, designed for **real-world Android and iOS testing**.
+
+The framework supports **local and cloud-based execution (BrowserStack)** and follows **enterprise-level automation practices** including driver factories, platform separation, CI/CD integration, and strict code quality enforcement.
+
+## 🎯 Use Cases
+
+- End-to-end mobile regression testing
+- Cross-platform Android & iOS automation
+- Cloud device testing with BrowserStack
+- CI-driven mobile test execution
+- Scalable automation for growing test suites
+
+> ⚠️ **Important Note**: Mobile app binaries (`.apk`, `.ipa`, `.app`) are **NOT stored in this repository** due to GitHub size limits. Please follow the instructions below to configure them locally or via cloud providers.
+
+---
+
+## 📂 Project Structure
+
 ```
-automation-test/
-├── src/                                    # Source code for the application
-│   ├── user.py                             # Handles user-related logic (e.g., authentication, profiles)
-│   ├── order.py                            # Manages order-related functionality (e.g., creation, updates)
-│   └── api/                                # API-related source code (e.g., endpoints, services)
-├── tests/                                  # Test code for the project
-│   ├── common/                             # Shared modules or utilities for tests
-│   ├── unit/                               # Unit tests for individual components
-│   │   ├── test_user.py                    # Unit tests for user-related functionality
-│   │   └── test_order.py                   # Unit tests for order-related functionality
-│   ├── api/                                # API tests for endpoints and services
-│   │   └── test_api.py                     # Test cases for API functionality
-│   ├── web/                                # Web UI tests using automation tools (e.g., Selenium)
-│   │   ├── pages/                          # Page Object models for web pages
-│   │   │   ├── login_page.py               # Page Object for login page
-│   │   │   └── dashboard_page.py           # Page Object for dashboard page
-│   │   └── test_web.py                     # Test cases for web UI functionality
-│   ├── app/                                # Mobile app tests using automation tools (Appium)
-│   │   ├── apps/                           # App and APK files
-│   │   │   ├── ios_app.app                 # Place iOS simulator build here
-│   │   │   └── android.apk                 # Place Android emulator build here
-│   │   ├── configs/                        # Desired capabilities for Appium
-│   │   │   ├── android_caps.json           # Android capabilities
-│   │   │   └── ios_caps.json               # iOS capabilities
-│   │   ├── drivers/                        # Appium & Sauce Lab Drivers
-│   │   │   ├── driver_factory.py           # Driver loader for Appium
-│   │   │   └── sauce_lab_driver.py         # SauceLab Driver
-│   │   ├── pages/                          # Page Object models for mobile app screens
-│   │   │   ├── login_screen.py             # Page Object for mobile login screen
-│   │   │   └── payment_screen.py           # Page Object for mobile payment screen
-│   │   ├── utils/                          # Helpers and utilities for mobile app tests
-│   │   │   ├── locators.py                 # Locators for mobile app screens
-│   │   │   ├── look_up.py                  # Look up utilities for mobile app screens
-│   │   │   └── timers.py                   # Time out utilities for mobile app screens
-│   │   ├── tests/                          # Test files for mobile app functionality
-│   │   │   └── test_dashboard_loading.py   # Mobile test cases
-│   │   ├── pytest.ini                      # Configuration file for Pytest settings
-│   │   ├── conftest.py                     # Pytest fixture configuration for app
-│   │   └── README.md                       # Readme for mobile app tests
-│   ├── integration/                        # Integration tests for system-wide functionality
-│   │   └── test_db.py                      # Tests for database interactions
-│   ├── data/                               # Test data files for various test cases
-│   │   └── users.json                      # JSON file containing user data for tests
-│   └── conftest.py                         # Global Pytest fixture configuration
-├── reports/                                # Directory for test reports and outputs
-│   ├── allure-results/                     # Allure test report results
-│   ├── htmlcov/                            # Code coverage reports in HTML format
-│   └── screenshots/                        # Screenshots for failed web and app tests
-├── requirements.txt                        # Project dependencies for Python packages
-├── pytest.ini                              # Configuration file for Pytest settings
-└── .gitignore                              # Git ignore file for excluding files from version control
+tests/
+├── api/              # API automation
+├── app/              # Mobile automation (Appium)
+│   ├── pages/        # Page Object Models
+│   ├── drivers/      # Driver factories
+│   ├── tests/        # Mobile test cases
+│   ├── configs/      # Capabilities
+│   └── utils/        # Utilities
 ```
-## How to run test cases locally
-### clone codes
+
+---
+
+## 🚀 Getting Started (Local Setup)
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/muhammad-bilaal/appium-mobile-automation-python.git
+cd appium-mobile-automation-python
 ```
-git clone https://gitlab.gettr.fyi/alex1/automation-test.git
-```
-### Install Pyhon and create a virtual env
-```
+
+### 2️⃣ Create Virtual Environment & Install Dependencies
+
+```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
-### run pytest
-`Note:` This will run all the test cases excluding the mobile app tests
-```commandline
+
+---
+
+## ▶️ Running Tests
+
+### 🔹 Run All Tests (Except Mobile)
+
+```bash
 pytest
 ```
 
-### Run mobile app tests
-To run the mobile app test cases refer to [Mobile App Automation Testing with Appium & Pytest](tests/app/README.md)
+---
 
-#### Quick Commands for Mobile Testing
+## 📱 Mobile App Testing (Appium)
 
-**Local Testing:**
+> Mobile binaries are **not committed** to Git. You must provide them locally or via cloud services.
+
+### 📌 Local Mobile Testing
+
 ```bash
 # Run all Android tests locally
 pytest --platform=android --env=local tests/app/tests
 
-# Run specific home page explore test locally
-pytest --platform=android --env=local tests/app/tests/smoke_tests/home_page/test_explore_tab_post_interactions_and_scrolling.py -v -s
+# Run a specific test
+pytest --platform=android --env=local \
+  tests/app/tests/smoke_tests/home_page/test_explore_tab_post_interactions_and_scrolling.py -v -s
 ```
 
-**BrowserStack Cloud Testing (via SDK):**
+### ☁️ BrowserStack Cloud Testing
+
 ```bash
-# Run Android home page explore test on BrowserStack
-browserstack-sdk pytest --platform=android --env=browserstack tests/app/tests/smoke_tests/home_page/test_explore_tab_post_interactions_and_scrolling.py -v -s
+browserstack-sdk pytest --platform=android --env=browserstack \
+  tests/app/tests/smoke_tests/home_page/test_explore_tab_post_interactions_and_scrolling.py -v -s
 ```
 
-**Prerequisites for BrowserStack:**
-- Populate `browserstack.yml` (or export overrides such as `BROWSERSTACK_USERNAME`, `BROWSERSTACK_ACCESS_KEY`, `BROWSERSTACK_ANDROID_APP_ID`, `BROWSERSTACK_IOS_APP_ID`)
-- Set authentication variables: `USERNAME`, `PASSWORD`
-## Generate Test Reports
+#### 🔐 BrowserStack Prerequisites
 
-## Code Quality Automation
-- Install the Git hook tooling with `pre-commit install` after setting up your virtualenv. This runs `ruff` (lint + format) and common sanity checks before every commit.
-- You can manually run the same checks via `pre-commit run --all-files`.
-- The `quality_checks` GitLab job (see below) executes `pre-commit` and a lightweight `pytest` run on every merge request update so contributors cannot skip the local hooks.
-- Run `scripts/install-hooks.sh` once to point Git at the enforced hooks in `.githooks/`; any commit attempted without `pre-commit` available now fails immediately.
+* Configure `browserstack.yml` **OR** export environment variables:
 
-## CI/CD Pipeline
+  * `BROWSERSTACK_USERNAME`
+  * `BROWSERSTACK_ACCESS_KEY`
+  * `BROWSERSTACK_ANDROID_APP_ID`
+  * `BROWSERSTACK_IOS_APP_ID`
+* Set app credentials:
 
-Automated GitLab pipeline that runs repository quality checks and a scheduled dependency updater.
+  * `USERNAME`
+  * `PASSWORD`
 
-### How to Trigger
+---
 
-**Manual Trigger (Recommended):**
-1. Navigate to GitLab project → **Build > Pipelines**
-2. Click **Run Pipeline** → Select branch → **Run Pipeline**
+## 📊 Test Reports
 
-**Individual Jobs:**
-- Trigger `quality_checks` or `monthly_dependency_update` manually if needed.
+* **Allure Reports**: Generated in `reports/allure-results`
+* **Coverage Reports**: Available in `reports/htmlcov`
+* **Screenshots**: Saved automatically for failed tests
 
-### Pipeline Stages
+---
 
-1. **Quality**: Runs `pre-commit` (ruff lint + format) and `pytest -m "not stage_1" --maxfail=1` on every merge request and default-branch push. The job adds a status comment to the MR for quick visibility.
-2. **Maintenance**: Scheduled `monthly_dependency_update` job refreshes `requirements.txt`, pushes a branch, and optionally opens a merge request when a `GITLAB_TOKEN` with `api` scope is present.
+## ✅ Code Quality Automation
 
-### Additional Pipeline Configuration
+* Install pre-commit hooks:
 
-- Define `GITLAB_TOKEN` (personal access token with `api` scope) to let the monthly dependency job open merge requests automatically. Without it, the job only pushes the update branch.
-- Optionally override `BOT_EMAIL` and `BOT_NAME` CI variables to customize the commit identity used by the dependency updater.
+```bash
+pre-commit install
+```
 
-### Results & Troubleshooting
+* Run checks manually:
 
-**View Results:**
-- GitLab job logs and artifacts (e.g., `precommit.log`).
-- Merge request comments from the quality job.
+```bash
+pre-commit run --all-files
+```
 
-**Common Issues:**
-- Missing `GITLAB_TOKEN` prevents automatic MR creation from the dependency update job.
-- Run `scripts/install-hooks.sh` locally so commits align with the enforced pre-commit hook.
+### Enforced Checks
+
+* `ruff` (lint + format)
+* Common sanity & security checks
+* Lightweight pytest execution
+
+> ⚠️ Commits without pre-commit validation will fail.
+
+---
+
+## 🔄 CI/CD Pipeline (GitHub Actions)
+
+The framework includes a GitHub Actions pipeline to ensure:
+
+- Code quality validation via pre-commit (ruff)
+- Stable test execution using Pytest
+- Pull request protection (blocks merge on failure)
+
+### Triggers
+- Every push
+- Every pull request
+
+### Secrets
+- GITHUB_TOKEN (auto-provided by GitHub Actions)
+
+### 🧠 Best Practices
+
+1 - ❌ Do NOT commit .apk / .ipa / .app files
+
+2 - ✅ Store mobile apps in cloud storage or CI providers (e.g., BrowserStack)
+
+3 - ✅ Keep the repository lightweight and fast
+
+4 - ✅ Follow Page Object Model (POM) strictly
+
+5 - ✅ Separate Android and iOS logic clearly
+
+### 👤 Maintainer
+
+**Muhammad Bilaal**  
+**Senior QA Automation Engineer | Mobile & Web**
+
+Automation Engineer with **4–5 years of hands-on experience** in **mobile (Appium), web (Playwright, Cypress), and API automation**. Specialized in **scalable frameworks, cloud device testing, and CI/CD-driven quality pipelines**.
+
+- GitHub: https://github.com/muhammad-bilaal  
+- LinkedIn: https://linkedin.com/in/bilaal-rajput-17a465278
+
+⭐ **Happy Testing 🚀**!
